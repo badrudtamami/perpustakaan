@@ -4,73 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perpustakaan</title>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="src/CSS/script.css" />
+    <!-- Material Icon -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- ====================== Header Start ======================= -->
     <header>
       <h1>Perpustakaan</h1>
       <div class="container-search">
-        <input type="text" name="search" />
+        <input type="text" name="search" class="input-searh" />
         <button class="btn-search">Cari</button>
       </div>
     </header>
     <!-- ====================== Header End ======================= -->
 
     <!-- ====================== Main Start ======================= -->
-    <!-- Side bar -->
-    <section class="sidebar-menu">
-      <div class="sidebar">
-        <p>Dashboard</p>
-      </div>
-      <div class="sidebar">
-        <p>Belum di Baca</p>
-      </div>
-      <div class="sidebar">
-        <p>Sudah di Baca</p>
-      </div>
-      <div class="sidebar">
-        <p>Favorit</p>
-      </div>
-      <div class="sidebar">
-        <button>Tambah Buku</button>
-      </div>
-    </section>
-
-    <!-- BookList -->
-    <section class="books-list">
-      <h2>Daftar Buku</h2>
-      <div class="book">
-        <img src="#" alt="" />
-        <p>Judul</p>
-        <p>Penulis</p>
-        <p>Tahun</p>
-      </div>
-      <div class="book">
-        <img src="#" alt="" />
-        <p>Judul</p>
-        <p>Penulis</p>
-        <p>Tahun</p>
-      </div>
-      <div class="book">
-        <img src="#" alt="" />
-        <p>Judul</p>
-        <p>Penulis</p>
-        <p>Tahun</p>
-      </div>
-      <div class="book">
-        <img src="#" alt="" />
-        <p>Judul</p>
-        <p>Penulis</p>
-        <p>Tahun</p>
-      </div>
-    </section>
-
     <main>
-      <div class="bookshelf"></div>
+      <!-- Side bar -->
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="" id="dashboard"
+              ><span class="material-symbols-outlined size-30"> home </span
+              >Dashboard</a
+            >
+          </li>
+          <li>
+            <a href="">
+              <span class="material-symbols-outlined size-30"> book_2 </span
+              >Belum di Baca</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span class="material-symbols-outlined size-30">
+                import_contacts </span
+              >Sudah di Baca</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span class="material-symbols-outlined size-30"> bookmark </span
+              >Favorit</a
+            >
+          </li>
+          <li>
+            <button class="btn-add">
+              <span class="material-symbols-outlined size-60"> add </span>Tambah
+              Buku
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- BookList -->
+      <section class="books-list">
+        <h2>Daftar Buku</h2>
+      </section>
     </main>
     <!-- ====================== Main End ======================= -->
-
-    <!-- ====================== Footer Start ======================= -->
-    <!-- ====================== Footer End ======================= -->
-  </body>
 </html>
